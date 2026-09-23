@@ -1,5 +1,8 @@
 import os
 import requests
+from env import cargar_env
+
+cargar_env()
 
 API_KEY = os.environ["GOOGLE_API_KEY"]
 SEARCH_ENGINE_ID = os.environ["GOOGLE_SEARCH_ENGINE_ID"]

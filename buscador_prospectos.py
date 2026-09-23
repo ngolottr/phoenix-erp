@@ -1,6 +1,9 @@
 import os
 from serpapi import GoogleSearch
 import re
+from env import cargar_env
+
+cargar_env()
 
 def buscar_prospectos(rubro, ciudad="Santiago", cantidad=10):
     """
